@@ -117,12 +117,11 @@ Preconditions:
 - The user is logged in.
 - At least one product is added to the shopping cart.
 
-Steps to Reproduce:
-
+**"Steps to Reproduce:**
 1. Open the shopping cart.
-2. Click Remove for a product.
+2. Click **Remove** for a product.
 3. Refresh the page.
-4. Open the shopping cart again.
+4. Observe the shopping cart.
 
 Expected Result:
 The removed product is no longer displayed in the shopping cart.
