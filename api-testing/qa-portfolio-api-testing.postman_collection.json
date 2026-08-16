@@ -9,9 +9,52 @@
   "item": [
     {
       "name": "GET — Echo Response",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response contains query parameters\", function () {\r",
+              "    const jsonData = pm.response.json();\r",
+              "\r",
+              "    pm.expect(jsonData.args.name).to.eql(\"Andrii\");\r",
+              "    pm.expect(jsonData.args.role).to.eql(\"QA\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/get?name=Andrii&role=QA",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Andrii"
+            },
+            {
+              "key": "role",
+              "value": "QA"
+            }
+          ]
+        }
       },
       "response": []
     },
