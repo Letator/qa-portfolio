@@ -1,39 +1,86 @@
 # API Testing
 
-This section contains examples of basic API testing using Postman.
+This section contains examples of API testing performed using Postman.
 
-## Testing Scope
+## API
 
-The examples cover:
+The tests use the Postman Echo API for demonstration purposes.
 
-* Sending GET requests
-* Sending POST requests
-* Verifying HTTP status codes
-* Checking response data
-* Validating required fields
-* Testing invalid requests
-* Basic response assertions
+## Tested Requests
 
-## HTTP Methods
+### GET — Echo Response
 
-* **GET** — retrieve data
-* **POST** — create new data
+**Endpoint:**
 
-## Status Codes
+`GET https://postman-echo.com/get`
 
-The following HTTP status codes are checked in the examples:
+**Purpose:**
 
-* **200 OK** — successful request
-* **201 Created** — resource successfully created
-* **400 Bad Request** — invalid request
-* **404 Not Found** — requested resource does not exist
+Verify that the API successfully returns a response to a GET request.
 
-## Postman
+**Expected result:**
 
-The accompanying Postman collection contains example requests and basic tests for API responses.
+- HTTP status code is 200 OK.
+- Response is returned in JSON format.
+- Request information is present in the response.
 
-The collection can be imported into Postman for review and execution.
+---
 
-## Notes
+### POST — Create Resource
 
-These examples are created for portfolio purposes and do not contain confidential information or credentials.
+**Endpoint:**
+
+`POST https://postman-echo.com/post`
+
+**Request body:**
+
+```json
+{
+  "name": "Andrii",
+  "role": "QA Engineer",
+  "project": "QA Portfolio"
+}
+**Purpose:**
+
+Verify that the API accepts POST requests and returns the submitted data.
+
+**Expected result:**
+
+- HTTP status code is 200 OK.
+- Response is returned in JSON format.
+- Submitted request data is returned in the response.
+
+---
+
+### GET — Non-existent Resource
+
+**Purpose:**
+
+Verify API behavior when requesting a non-existent resource.
+
+**Expected result:**
+
+- The API returns an appropriate HTTP error status.
+- The response contains a valid error message.
+
+---
+
+## Testing Performed
+
+- GET requests
+- POST requests
+- HTTP status code verification
+- Response body verification
+- JSON response validation
+- Request data verification
+
+## Tools
+
+- Postman
+- Postman Echo API
+
+## Collection
+
+The Postman collection is available in this repository:
+
+`qa-portfolio-api-testing.postman_collection.json`
