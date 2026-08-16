@@ -39,7 +39,8 @@ Verify that the API successfully returns a response to a GET request.
   "name": "Andrii",
   "role": "QA Engineer",
   "project": "QA Portfolio"
-}```
+}
+```
 **Purpose:**
 
 Verify that the API accepts POST requests and returns the submitted data.
