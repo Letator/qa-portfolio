@@ -29,7 +29,7 @@ This section provides an overview of my QA experience across commercial, project
 * Verifying forms, buttons, links, redirects, and user flows.
 * Reporting and tracking defects.
 * Performing regression testing after fixes.
-* Checking UI implementation against design specifications.
+* Comparing the implemented UI with Figma design specifications.
 * Using Chrome DevTools for browser-based testing and debugging.
 
 ---
