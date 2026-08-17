@@ -45,4 +45,4 @@ I have experience in functional testing, test case design, checklist creation, b
 
 ## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/andrii-ohiichenko/)
+- [LinkedIn](https://www.linkedin.com/in/andrii-ohiichenko-424625405/)
