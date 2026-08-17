@@ -79,17 +79,17 @@ SELECT order_id, status, total
 FROM orders
 WHERE order_id = 1001;
 ```
-QA Use Cases
+## QA Use Cases
 
 SQL can be useful for:
 
-Verifying data created through the UI.
-Checking whether updated data is stored correctly.
-Investigating defects.
-Comparing application data with database records.
-Checking relationships between database tables.
-Validating records after API requests.
-Notes
+- Verifying data created through the UI.
+- Checking whether updated data is stored correctly.
+- Investigating defects.
+- Comparing application data with database records.
+- Checking relationships between database tables.
+- Validating records after API requests.
+## Notes
 
 These are example SQL queries created for QA portfolio purposes.
 
